@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 part2</title>
+</head>
+<body>
+    <div class="product" data-id="1" data-price="95">
+        <h1>001</h1>
+        <p>500</p>
+        <button onclick="addToCart(1)">Add to Cart</button>
+
+    </div>
+    <div class="product" data-id="2" data-price="950">
+        <h1>002</h1>
+        <p>5000</p>
+        <button onclick="addToCart(2)">Add to Cart</button>
+
+    </div>
+    <script>
+        function addToCart(id){
+            var str=document.querySelector('.product[data-id="' +id +'"]');
+            var product=str.querySelector("h1").textContent;
+            var price=str.querySelector("p").textContent;
+            alert("Product has been added");
+            alert("Product id "+product);
+            alert("Product price "+ price);
+        }
+    </script>
+</body>
+</html>
