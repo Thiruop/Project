@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="result.js"></script>
+</head>
+<body>
+    <div>
+        <h3>York Admission</h3>
+    </div>
+    <div>
+    <form>
+        <table>
+            <tr>
+                <td>Student Name</td>
+                <td><input type="text" id="sname" placeholder="Enter the student name" pattern="[A-Za-z ]+"></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                </td><input type="tel" id="phno" placeholder="Enter the phone number" pattern="[789]\d{9}"></td>
+            </tr>
+            <tr>
+                <td>Admission Id</td>
+                <td><input type="number" id="aid" placeholder="Enter the admission id"></td>
+            </tr>
+            <tr>
+                <td>Date of Admission</td>
+                <td><input type="date" id="admissiondate" required></td>
+            </tr>
+            <tr>
+                <td>Department Name</td>
+                <td> <select id="deptname" required>
+                    <option>EEE</option>
+                    <option>ECE</option>
+                    <option>CSE</option>
+                    <option>MECH</option>
+                    <option>CIVIL</option>
+                    <option>IT</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Prefer College Hostel</td>
+                <td><input type="radio" id="yes" name="preferHostel">Yes<input type="radio" id="no" name="preferHostel">No</td>
+            </tr>
+            <tr>
+                <td>First Graduate</td>
+                <td><input type="checkbox" id="firstGraduate">Click if you are first graduate</td>
+            </tr>
+        </table>
+        <!-- <button id="submit">CONFIRM ADMISSION</button> -->
+    </form>
+    <button id="submit" onclick="display(1)">CONFIRM ADMISSION</button>
+    <div id="result">
+
+    </div>
+</div>
+</body>
+</html>
